@@ -88,10 +88,16 @@ python -m pip install paddlepaddle-gpu==2.6.0.post116 -f https://www.paddlepaddl
 pip install paddleslim
 ```
 源码安装(推荐):
+<<<<<<< HEAD
 ```shell
 git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
 python setup.py install
 ```
+=======
+git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
+python setup.py install
+
+>>>>>>> d5d383c... 修改auto_compression文档中跑不通的问题 (#1829)
 安装paddledet：
 ```shell
 pip install paddledet
@@ -168,6 +174,10 @@ python run.py --config_path=./configs/ppyoloe_l_qat_dis.yaml --save_dir='./outpu
 export CUDA_VISIBLE_DEVICES=0,1,2,3
 python -m paddle.distributed.launch run.py --save_dir='./rtdetr_hgnetv2_l_6x_coco_quant' --config_path=./configs/rtdetr_hgnetv2_l_qat_dis.yaml
 ```
+<<<<<<< HEAD
+=======
+0*640
+>>>>>>> d5d383c... 修改auto_compression文档中跑不通的问题 (#1829)
 
 ## 4.预测部署
 
