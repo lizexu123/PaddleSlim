@@ -87,7 +87,11 @@ python -m pip install paddlepaddle-gpu==2.4.1.post112 -f https://www.paddlepaddl
 ```shell
 pip install paddleslim
 ```
-
+源码安装(推荐):
+```shell
+git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
+python setup.py install
+```
 安装paddledet：
 ```shell
 pip install paddledet
@@ -158,7 +162,6 @@ python run.py --config_path=./configs/ppyoloe_l_qat_dis.yaml --save_dir='./outpu
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m paddle.distributed.launch --log_dir=log --gpus 0,1,2,3 run.py \
           --config_path=./configs/ppyoloe_l_qat_dis.yaml --save_dir='./output/'
 ```
-
 
 ## 4.预测部署
 
