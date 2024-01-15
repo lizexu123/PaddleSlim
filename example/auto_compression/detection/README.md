@@ -70,9 +70,9 @@
 ## 3. 自动压缩流程
 
 #### 3.1 准备环境
-- PaddlePaddle >= 2.4 （可从[Paddle官网](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/linux-pip.html)下载安装）
-- PaddleSlim >= 2.4
-- PaddleDet >= 2.4
+- PaddlePaddle >=2.5 （可从[Paddle官网](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/linux-pip.html)下载安装）
+- PaddleSlim >= 2.5
+- PaddleDet >= 2.5
 - opencv-python
 
 安装paddlepaddle：
@@ -83,27 +83,12 @@ python -m pip install paddlepaddle==2.6.0 -i https://pypi.tuna.tsinghua.edu.cn/s
 python -m pip install paddlepaddle-gpu==2.6.0.post116 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
 ```
 
-安装paddleslim：
-```shell
-pip install paddleslim
-```
 源码安装(推荐):
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ```shell
 git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
 python setup.py install
 ```
-=======
-=======
->>>>>>> d5d383c... 修改auto_compression文档中跑不通的问题 (#1829)
-=======
->>>>>>> d5d383c... 修改auto_compression文档中跑不通的问题 (#1829)
-git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
-python setup.py install
 
->>>>>>> d5d383c... 修改auto_compression文档中跑不通的问题 (#1829)
 安装paddledet：
 ```shell
 pip install paddledet
