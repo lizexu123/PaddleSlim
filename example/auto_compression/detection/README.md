@@ -88,7 +88,6 @@ python -m pip install paddlepaddle-gpu==2.6.0.post116 -f https://www.paddlepaddl
 git clone -b release/2.6 https://github.com/PaddlePaddle/PaddleSlim.git & cd PaddleSlim
 python setup.py install
 ```
-
 安装paddledet：
 ```shell
 pip install paddledet
